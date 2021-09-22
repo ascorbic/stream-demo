@@ -17,13 +17,13 @@ export const handler = streamer(async (event, res) => {
     res.write(updateBlock(`<p>Still watching?</p>`))
     await pause(1000)    
     res.write(updateBlock(`<p>Did you know that React streaming is just a load of script tags with replaceChildren?</p>`))
-    await pause(1000)
+    await pause(2000)
     res.write(updateBlock(`<em>Still pretty cool though, right?</em>`))
     await pause(1000)
-    res.write(updateBlock(`Let's see how long we can do this for`))
-    await pause(1000)
+    res.write(updateBlock(`View source on this after it's done`))
+    await pause(2000)
     for (let i = 0; i < 20; i++) {
-        res.write(updateBlock(`<em>That's been ${i+6} seconds</em>`))
+        res.write(updateBlock(`<em>That's been ${i+8} seconds</em>`))
         await pause(1000)
         
     }
