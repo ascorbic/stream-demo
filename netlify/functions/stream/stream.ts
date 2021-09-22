@@ -18,6 +18,6 @@ export const handler = streamer(async (event, res) => {
     await pause(1000)
     res.write(updateBlock(`<p>Still watching?</p>`))
     await pause(1000)
-    res.write(updateBlock(`<p><strong>And we're done</strong></p>`))
+    res.write(updateBlock(`<p><strong>Finished!</strong></p>`))
     res.end()
 })
