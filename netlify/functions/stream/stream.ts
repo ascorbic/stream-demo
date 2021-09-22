@@ -5,13 +5,12 @@ function pause(count: number) {
 }
 
 export const handler = streamer(async (event, res) => {
+    console.log("incoming")
+    console.log("event", event)
     res.setHeader("x-test", "value")
     res.setHeader("content-type", "text/plain")
     res.write("first block")
     await pause(1000)
     res.write("second block")
-    for (let index = 0; index < 10; index++) {
-        await pause(1000)
-        res.write(`block ${index + 2}`)
-    }
+    res.end()
 })
