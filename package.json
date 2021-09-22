@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@netlify/functions": "^0.7.3-streaming.5"
+    "@netlify/functions": "^0.7.3-streaming.6"
   },
   "devDependencies": {
     "@types/node": "^16.9.6"
